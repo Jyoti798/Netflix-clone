@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: black;
+    color: #fff;
+
+}
+
+/* ..........................................header............................................ */
+.header {
+    width: 100%;
+    height: 111vh;
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.9) 100%), url(images/hom.jpg);
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 22px;
+
+}
+
+nav img {
+    width: 9.25rem;
+    height: 2.5rem;
+    margin-left: 10%;
+}
+
+.right {
+    margin-right: 12%;
+}
+
+.lang .src {
+    width: 9px;
+    height: 5px;
+    padding-left: 5px;
+
+}
+
+.lang {
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 0.25rem;
+    padding: 0px 7px;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 3px 17px 3px;
+    margin-top: 7px;
+    margin-left: 22px;
+    font-weight: lighter;
+}
+
+.lang i {
+    background-color: none;
+    padding: 7px 7px 5px 0px;
+}
+
+.btn1 {
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: rgb(234, 38, 38);
+    color: white;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px 14px;
+    margin-top: 7px;
+    margin-left: 20px;
+    font-weight: lighter;
+
+}
+
+.btn1:hover {
+    background-color: rgb(160, 25, 25);
+}
+
+.home_text {
+    text-align: center;
+    margin-top: 15%;
+    overflow: hidden;
+}
+
+.home_text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.home_text h3 {
+    font-size: 1.3rem;
+    margin: 1rem 0 0;
+    font-weight: 500;
+}
+
+.home_text p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 1.5rem 0 0;
+}
+
+.signup {
+    margin-top: 17px;
+}
+
+.signup input {
+    background: transparent;
+    color: white;
+    border: 1px solid grey;
+    appearance: none;
+    font-size: 15px;
+    width: 27%;
+    padding: 0.9rem 1rem 0.9rem 1rem;
+    line-height: 1.5rem;
+    border-radius: 0.25rem;
+
+}
+
+input::placeholder {
+    color: rgb(196, 186, 186);
+}
+
+.signup button {
+    background: rgb(229, 9, 20);
+    color: white;
+    appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 0.25rem;
+    text-align: center;
+    display: inline-flex;
+    cursor: pointer;
+    width: auto;
+    justify-content: center;
+    font-size: 1.35rem;
+    font-weight: 600;
+    padding: 0.55rem 1rem;
+    margin-left: 0.3rem;
+
+}
+
+.signup button:hover {
+    background-color: rgb(160, 25, 25);
+}
+
+.signup button i {
+    padding: 9px;
+    font-weight: lighter;
+    font-size: 17px;
+}
+
+/* ........................................features.................................. */
+.feature {
+    border-top: 7px solid #333;
+}
+
+.netflix_feature {
+    margin: 0px 152px;
+    padding: 4.5rem 0px;
+
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text_col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img_col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img_col img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.text_col h1 {
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+.text_col p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+/* ............................................question................................................. */
+.question {
+    padding: 4.5rem 0;
+    text-align: center;
+    font-size: 18px;
+    border-top: 7px solid #333;
+}
+
+.question h2 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.accordion {
+    margin: 15px 153px;
+    width: 100%;
+    max-width: 960px;
+    overflow: hidden;
+
+}
+
+.accordion li {
+    list-style: none;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 24px;
+    font-weight: 500;
+    background: #303030;
+    margin: 0 0 0.1rem 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.accordion li label:hover {
+    background: rgb(84, 84, 84);
+}
+
+label::after {
+    content: '+';
+    font-size: 40px;
+    margin-bottom: 1px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.accordion .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    margin-bottom: 7px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion .content p {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.accordion input[type="radio"]:checked+label+.content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+
+}
+
+.form {
+    text-align: center;
+}
+
+.form p {
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+/* ......................................footer..................................................... */
+.footer {
+    padding: 65px 15% 10px;
+    margin-top: 65px;
+    border-top: 6px solid #333;
+    color: rgb(174, 173, 173);
+    margin-bottom: 40px;
+}
+
+.footer h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration-color: #fff;
+    color: rgb(193, 191, 191);
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+
+}
+
+.footer .row {
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.footer .lang {
+    color: #fff;
+    margin-left: 0px;
+}
+
+.copyright {
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ...........................media........................... */
+@media only screen and (max-width:600px) {
+    .header {
+        height: 90vh;
+    }
+
+    nav img {
+        width: 89px;
+        height: 25px;
+        margin-left: 2px;
+    }
+
+    .lang {
+        padding: 1px 8px;
+        margin-top: 0;
+    }
+
+    .btn1 {
+        padding: 4px 8px;
+        margin-top: 0;
+    }
+
+    .right {
+        margin-right: 0;
+        margin-left: 22px;
+    }
+
+    .home_text {
+        position: unset;
+        transform: none;
+        padding-top: 40px;
+    }
+
+    .home_text h1 {
+        font-size: 30px;
+
+    }
+
+
+    .home_text h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .home_text p {
+        text-align: center;
+        font-size: 18px;
+        padding: 30px;
+        padding-top: 0px;
+
+    }
+
+    .signup input {
+        width: 69%;
+    }
+
+    .signup button {
+        font-size: 19px;
+        padding: 8px 4px;
+        margin: 20px 80px;
+    }
+
+    .text_col,
+    .img_col {
+        flex-basis: 100%;
+    }
+
+    .netflix_feature {
+        margin: 22px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .netflix_feature h1 {
+        font-size: 32px;
+    }
+
+    .netflix_feature p {
+        font-size: 15px;
+    }
+
+    .row:nth-child(2),
+    .row:nth-child(4) {
+        flex-direction: column-reverse;
+    }
+
+    .netflix_feature .row {
+        padding: 10px 0;
+    }
+
+    .question h2 {
+        font-size: 30px;
+    }
+
+    .accordion {
+        margin-left: 22px;
+        width: 88%;
+        overflow: hidden;
+    }
+
+    .accordion .content {
+        font-size: 14px;
+    }
+
+    .accordion .content p {
+        font-size: 15px;
+    }
+
+    .accordion li label {
+        padding: 22px;
+        font-size: 14px;
+    }
+
+    label::after {
+        font-size: 22px;
+    }
+
+    .footer .col {
+        margin-bottom: 0;
+    }
+}
